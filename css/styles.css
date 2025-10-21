@@ -1,0 +1,33 @@
+/* outgoing animation */
+/* Test animation CSS generated entirely by AI. */
+@keyframes cardFlyOut {
+    0% {
+        transform: translateY(0) rotate(0) scale(1);
+        opacity: 1;
+    }
+
+    40% {
+        transform: translateY(-6px) rotate(-4deg) scale(1.02);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-40px) rotate(8deg) scale(0.6);
+        opacity: 0;
+    }
+}
+
+.card-leaving {
+    animation-name: cardFlyOut;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+    animation-fill-mode: forwards;
+    pointer-events: none;
+    /* avoid double clicks while animating */
+    will-change: transform, opacity;
+}
+
+/* small press feedback if clicked rapidly (optional) */
+.card-press {
+    transform: scale(0.995);
+    transition: transform 80ms;
+}
