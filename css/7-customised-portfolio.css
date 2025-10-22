@@ -19,8 +19,20 @@ h2 {
     color: #184f63; /* dark-blue */
 }
 
-.sharp-corners, .sharp-corners * {
+.sharp-corners,
+.sharp-corners * {
     border-radius: 0;
+}
+
+.custom-btn {
+    background-color: #1f7798; /* mid-blue */
+    border-color: #1f7798; /* mid-blue */
+    color: white;
+}
+
+.custom-btn:hover {
+    background-color: #1d6d8a;
+    border-color: #1d6d8a;
 }
 
 /* About Section */
