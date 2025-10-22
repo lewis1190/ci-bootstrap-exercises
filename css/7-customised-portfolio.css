@@ -19,6 +19,10 @@ h2 {
     color: #184f63; /* dark-blue */
 }
 
+.sharp-corners, .sharp-corners * {
+    border-radius: 0;
+}
+
 /* About Section */
 #about {
     background-color: white;
