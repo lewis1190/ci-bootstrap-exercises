@@ -56,7 +56,13 @@
         </p>
         <!-- mb-5 gives extra margin spacing under lead text -->
         <p class="lead mb-5">Let's create something amazing together!</p>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newsletterModal">
+          Subscribe to my newsletter!
+        </button>
       </div>
+
     </section>
   </header>
 
@@ -181,6 +187,34 @@
             <button type="submit" class="btn btn-primary">Send</button>
           </div>
         </form>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="newsletterModalLabel">Subscribe</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Join my newsletter for the latest updates on my projects, coding tips, and industry insights delivered straight to your inbox.
+            <form class="row g-3 mt-1">
+              <div class="col-lg-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="col-lg-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign up!</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
